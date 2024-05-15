@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "open sans";
+    scroll-behavior: smooth;
+}
+
+:root {
+    --backGcolor: rgba(1,24,38,1);
+    --textcolor: #fff;
+    --maincolor: rgba(255, 154, 22, 1);
+    --secondcolor: rgba(231, 23, 74, 1);
+    --backGcolorP: rgba(44, 193, 170, 1);
+    --fontRa: "Ralaway" "sans-serif";
+}
+
+.bgc {
+    background-color: var(--backGcolor) !important;
+}
+
+.bcgF {
+    background-color: var(--backGcolorP) !important;
+}
+
+.container1440 {
+    max-width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--maincolor);
+    font-weight: 400;
+    font-size: 16px;
+
+    &:hover{
+        color: var(--secondcolor);
+    }
+}
+
+.current-page{
+    color: var(--secondcolor) !important;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#bg_menu {
+    display: none;
+}
+
+h1, h2 {
+    font-family: var(--fontRa);
+    font-size: 36px;
+    color: var(--textcolor);
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--fontRa);
+    font-size: 21px;
+    color: var(--textcolor);
+    font-weight: 700;
+}
+
+p{
+  font-size: 16px;
+  color: var(--textcolor);
+  font-weight: 400;
+}
+
+.btn_1 {
+    padding: 5px 10px;
+    border: 1px solid var(--maincolor);
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+
+    &:hover {
+        border-color: var(--secondcolor);
+        background-color: var(--secondcolor);
+        color: var(--textcolor);
+    }
+}
+
+.btn_2 {
+    padding: 5px 10px;
+    border: 1px solid var(--textcolor);
+    background-color: var(--backGcolor);
+    color: var(--textcolor);
+
+    &:hover {
+        border-color: var(--textcolor);
+        background-color: var(--secondcolor);
+        color: var(--textcolor);
+    }
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 50px;
+}
+
+header img {
+    width: 180px;
+    height: 36.89px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+/* main */
+/* section 1 */
+
+.section_1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:0 15px 50px;
+}
+
+.section_1 #presentation {
+    width: 70%;
+    padding: 26px 0;    
+}
+
+.section_1 #presentation h1{
+    padding-bottom: 28px;
+    letter-spacing: 1px;
+}
+
+
+.section_1 img{
+    width: 100%;
+}
+
+.section_1 #presentation p{
+    padding-bottom: 30px;
+    line-height: 24.51px;
+}
+
+.section_1 #presentation a {
+    padding: 10px 20px;
+    
+}
