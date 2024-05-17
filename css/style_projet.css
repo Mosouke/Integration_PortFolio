@@ -105,7 +105,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 15px 50px;
     position: relative;
 }
 
@@ -172,7 +172,7 @@ nav ul li:nth-child(8) {
     animation: apparition 0.5s forwards;
     animation-delay: 0.7s;
 }
-
+  
 /* modal */
 .modal {
     display: none;
@@ -271,7 +271,6 @@ footer {
 
 /* main */
 /* section titre */
-
 #bgcR {
     background-color: var(--secondcolor);
     height: 430px;
@@ -281,7 +280,7 @@ footer {
     margin-bottom: 80px;
 }
 
-#bgcR div{
+#bgcR article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,117 +288,15 @@ footer {
     margin: auto;
 }
 
-#bgcR div h1 {
+#bgcR article h1 {
     padding: 0 10px 20px;
     letter-spacing: 1.2px;
     text-align: center;
 }
 
-#bgcR div p {
+#bgcR article p {
     padding: 0 10px;
     text-align: center;
-}
-
-/* section desc */
-
-#desc {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 10px 15px;
-    margin-bottom: 80px;
-}
-
-#desc img {
-    width: 100%;
-    height: 680px;
-}
-
-#desc article {
-    display: grid;
-    align-items: center; 
-      
-}
-
-#desc div h2 {
-    padding-bottom: 20px;
-    letter-spacing: 1.2px;
-}
-
-#desc div p {
-    width: 80%;
-    line-height: 27px;
-}
-
-/* section compétence */
-
-#competence {
-    width: 100%;    
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#competence > h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#competence > div {
-    width: 50%;    
-}
-
-ul#comp_list, ul#comp_list2 {
-    list-style: none;
-    padding: 0;
-}
-
-ul#comp_list > li, ul#comp_list2 > li {
-    margin: 10px 10px 15px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-ul#comp_list > li > ul, ul#comp_list2 > li > ul {
-    list-style-type: circle;
-    padding-left: 20px;
-    margin-top: 15px;
-}
-
-ul#comp_list > li > ul > li, ul#comp_list2 > li > ul > li {
-    margin-bottom: 10px;
-}
-
-ul#comp_list > li > label, ul#comp_list2 > li > label {
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--maincolor);
-    border-bottom: 2px solid var(--secondcolor);
-    padding-bottom: 7px;
-}
-
-ul#comp_list > li > input[type="checkbox"], ul#comp_list2 > li > input[type="checkbox"] {
-    display: none;
-}
-
-ul#comp_list > li > input[type="checkbox"]:checked + ul, ul#comp_list2 > li > input[type="checkbox"]:checked + ul {
-    display: block;
-}
-
-ul#comp_list > li > ul, ul#comp_list2 > li > ul {
-    display: none;
-}
-
-ul#sub_framework > li > ul {
-    margin-bottom: 10px;
-    list-style-type: disc;
-}
-
-ul#sub_framework > li > ul > li {
-    margin: 10px 0 10px 25px;
 }
 
 /* section projet */
@@ -455,7 +352,25 @@ ul#sub_framework > li > ul > li {
     padding: 15px;
 }
 
-/* resonsive */
+/* section inutille */
+
+#usless {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px
+}
+
+#usless div {
+    padding-bottom: 20px;
+}
+
+#usless a {
+    padding: 5px;
+}
+
+/* responsive */
 
 @media screen and (max-width: 1200px) {
     header > nav > ul {
@@ -480,54 +395,33 @@ ul#sub_framework > li > ul > li {
         color: var(--textcolor);
         font-size: 20px;
     }
+
+    #section_projet #flx{
+        gap: 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    #desc {
-        grid-template-columns: 1FR;
-        gap: 20px;
-    }
- 
-    #desc article p {
-        width: 100%;
-    }
-
-    #desc img {
-        height: 655px;
-    }
-
-    #section_projet #flx {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    
+    #section_projet #flx{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    } 
     #section_projet .large {
         grid-column: span 2;
     }
 
     #section_projet .large img {
         object-fit: cover;
-    }   
+    }      
 }
 
 @media screen and (max-width: 425px) {
-    #desc img {
-        height: 290px;
-    }
-
-    #competence > div {
-        width: 100%;
-    }
-
-    #section_projet #flx {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #section_projet #alig {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 0px;
+    #section_projet #flx{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    } 
+    #section_projet .large {
+        grid-column: span 1;
     }
 }
+
