@@ -284,16 +284,23 @@ footer {
     margin-bottom: 80px;
 }
 
-section .container1440 {
+#bgcR div{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    margin: auto;
 }
 
-section .container1440 h1 {
-    padding-bottom: 20px;
+#bgcR div h1 {
+    padding: 0 10px 20px;
     letter-spacing: 1.2px;
+    text-align: center;
+}
+
+#bgcR div p {
+    padding: 0 10px;
+    text-align: center;
 }
 
 /* section desc */
@@ -398,18 +405,15 @@ ul#sub_framework > li > ul > li {
     margin: 10px 0 10px 25px;
 }
 
-/* section prjet */
+/* section projet */
 #section_projet {
     margin: auto;
 }
 
 #section_projet div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 40px 10px 30px;
-    
+    padding: 0px 10px 30px;   
 }
 
 #section_projet article .bord {
@@ -424,6 +428,13 @@ ul#sub_framework > li > ul > li {
     &:hover img{
         transform: scale(1.07);
     }
+}
+
+#section_projet #isol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 #section_projet #flx {
@@ -445,4 +456,81 @@ ul#sub_framework > li > ul > li {
 
 #section_projet .sepa {
     padding: 15px;
+}
+
+/* resonsive */
+
+@media screen and (max-width: 1200px) {
+    header > nav > ul {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header > nav > ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    header > nav > ul {
+        display: none;
+    }
+
+    header nav #bg_menu {
+        display: flex;
+        padding: 15px;
+        color: var(--textcolor);
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #desc {
+        grid-template-columns: 1FR;
+        gap: 20px;
+    }
+ 
+    #desc article p {
+        width: 100%;
+    }
+
+    #desc img {
+        height: 655px;
+    }
+
+    #section_projet #flx {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    #section_projet .large {
+        grid-column: span 2;
+    }
+
+    #section_projet .large img {
+        object-fit: cover;
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    #desc img {
+        height: 290px;
+    }
+
+    #competence > div {
+        width: 100%;
+    }
+
+    #section_projet #flx {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #section_projet #alig {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
 }
