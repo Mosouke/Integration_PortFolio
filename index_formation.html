@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio John Doe</title>
-    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/2bb90c57b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style_formation.css">
+    <title>Ma Formation</title>
 </head>
 <body class="bgc">
     <header class="container1440">
@@ -17,9 +17,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/" class="current-page">Accueil</a></li>
-                <li><a href="#section_1">Qui suis-je ?</a></li>
-                <li><a href="#section_2">Ma formation</a></li>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/index.html#section_1">Qui suis-je ?</a></li>
+                <li><a href="/index.html" class="current-page">Ma formation</a></li>
                 <li><a href="#competence">Mes compétences</a></li>
                 <li><a href="#section_projet">Mes projets</a></li>
                 <li>
@@ -45,55 +45,25 @@
         </nav>
     </header>
     <main>
-        <section id="section_1" class="container1440 section_1">
-            <article id="presentation">
-                <h1>John Doe - Développeur web et web mobile</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                <a href="#modalContact2" class="btn_1">Contactez-moi</a>
-                <div id="modalContact2" class="modal1">
-                    <a href="#" class="close">&times;</a>
-                    <div class="modal_content">
-                        <h2>Me contacter</h2>
-                        <form action="">
-                            <label for="name">Votre nom :</label>
-                            <input type="text" id="name" placeholder="Votre nom" required>
-                            <label for="email">Votre email :</label>
-                            <input type="email" id="email" placeholder="Votre email" required>
-                            <label for="message" req>Votre message :</label>
-                            <textarea id="message" placeholder="Votre message" r></textarea>
-                            <input type="submit" value="Envoyer la demande">
-                        </form>
-                    </div>
-                </div>
-            </article>                
-            <img src="img/moi.png" alt="photo du développeur">                
+        <section id="bgcR">
+            <div class="container1440">
+                <h1>Formation à la carte</h1>
+                <p>4 mois de formation de découverte des métiers du développement</p>
+            </div>
         </section>
-        <section id="section_2">
-            <h2>Ma formation</h2>
-            <article id="art1">
+        <section id="desc" class="container1440">
+            <article>
+                <div>
+                    <h2>Description de la formation</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci distinctio quibusdam reprehenderit neque porro asperiores repellat delectus a nisi necessitatibus beatae laboriosam explicabo, sit ex alias libero illo error minima!</p>
+                </div>
+            </article>
+            <div>
                 <img src="img/dev-a-la-carte.png" alt="photo de ligne de code">
-                <div id="bcgO1">
-                    <h3>Formation développement à la carte</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, repellat earum quos facere quibusdam exercitationem illo a eligendi dignissimos dicta quisquam voluptatem sapiente repellendus porro? Exercitationem ut quidem asperiores.</p>
-                    <a href="/index_formation.html" class="btn_2">En savoir plus</a>
-                </div>
-            </article>
-            <article id="art2">
-                <div id="bcgO2">
-                    <h3>Formation Développeur Web et Web Mobile</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, repellat earum quos facere quibusdam exercitationem illo a eligendi dignissimos dicta quisquam voluptatem sapiente repellendus porro? Exercitationem ut quidem asperiores.</p>
-                    <a href="#" class="btn_2">En savoir plus</a>
-                </div>
-                <img src="img/dwwm.png" alt="Interface de ligne de code">
-            </article>
+            </div>
         </section>
         <section id="competence" class="container1440">
-            <h2>Mes compétences</h2>
+            <h2>Mes compétences développés</h2>
             <div>
                 <ul id="comp_list">
                     <li>
@@ -230,7 +200,7 @@
                     </div>
                 </article>
             </div>
-        </section>           
+        </section>  
     </main>
     <footer class="bcgF">
         <div class="container1440">
