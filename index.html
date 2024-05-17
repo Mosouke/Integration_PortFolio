@@ -3,70 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port Folio John Doe</title>
+    <title>Portfolio John Doe</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/2bb90c57b5.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="bgc">
-        <header class="container1440">
+<body class="bgc">
+    <header class="container1440">
+        <div>
+            <a href="/">
+                <img src="img/Logo.png" alt="logo du site">
+                <p>Développeur Web et Web Mobile</p>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/" class="current-page">Accueil</a></li>
+                <li><a href="#">Qui suis-je ?</a></li>
+                <li><a href="#section_2">Ma formation</a></li>
+                <li><a href="#competence">Mes compétences</a></li>
+                <li><a href="#section_projet">Mes projets</a></li>
+                <li>
+                    <a href="#modalContact" class="btn_1">Contactez-moi</a>
+                    <div id="modalContact" class="modal">
+                        <a href="#" class="close">&times;</a>
+                        <div class="modal_content">
+                            <h2>Me contacter</h2>
+                            <form action="">
+                                <label for="name">Votre nom :</label>
+                                <input type="text" id="name" placeholder="Votre nom" required>
+                                <label for="email">Votre email :</label>
+                                <input type="email" id="email" placeholder="Votre email" required>
+                                <label for="message" req>Votre message :</label>
+                                <textarea id="message" placeholder="Votre message" r></textarea>
+                                <input type="submit" value="Envoyer la demande">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars" id="bg_menu"></i>
+        </nav>
+    </header>
+    <main>
+        <section class="container1440 section_1">
+            <article id="presentation">
+                <h1>John Doe - Développeur web et web mobile</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                <a href="#modalContact2" class="btn_1">Contactez-moi</a>
+                <div id="modalContact2" class="modal1">
+                    <a href="#" class="close">&times;</a>
+                    <div class="modal_content">
+                        <h2>Me contacter</h2>
+                        <form action="">
+                            <label for="name">Votre nom :</label>
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                            <label for="email">Votre email :</label>
+                            <input type="email" id="email" placeholder="Votre email" required>
+                            <label for="message" req>Votre message :</label>
+                            <textarea id="message" placeholder="Votre message" r></textarea>
+                            <input type="submit" value="Envoyer la demande">
+                        </form>
+                    </div>
+                </div>
+            </article>                
+            <img src="img/moi.png" alt="photo du développeur">                
+        </section>
+        <section id="section_2">
+            <h2>Ma formation</h2>
+            <article id="art1">
+                <img src="img/dev-a-la-carte.png" alt="photo de ligne de code">
+                <div id="bcgO1">
+                    <h3>Formation développement à la carte</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, repellat earum quos facere quibusdam exercitationem illo a eligendi dignissimos dicta quisquam voluptatem sapiente repellendus porro? Exercitationem ut quidem asperiores.</p>
+                    <a href="#" class="btn_2">En savoir plus</a>
+                </div>
+            </article>
+            <article id="art2">
+                <div id="bcgO2">
+                    <h3>Formation Développeur Web et Web Mobile</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, repellat earum quos facere quibusdam exercitationem illo a eligendi dignissimos dicta quisquam voluptatem sapiente repellendus porro? Exercitationem ut quidem asperiores.</p>
+                    <a href="#" class="btn_2">En savoir plus</a>
+                </div>
+                <img src="img/dwwm.png" alt="Interface de ligne de code">
+            </article>
+        </section>
+        <section id="competence" class="container1440">
+            <h2>Mes compétences</h2>
             <div>
-                <a href="/">
-                    <img src="img/Logo.png" alt="logo du site">
-                    <p>Développeur Web et Web Mobil</p>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/" class="current-page">Accueil</a></li>
-                    <li><a href="#">Qui suis-je ?</a></li>
-                    <li><a href="#section_2">Ma formation</a></li>
-                    <li><a href="#">Mes compétences</a></li>
-                    <li><a href="#">Mes projet</a></li>
-                    <li><a href="#" class="btn_1">Contactez-moi</a></li>
-                </ul>
-                <i class="fa-solid fa-bars" id="bg_menu"></i>
-            </nav>
-        </header>
-        <main>
-            <section class="container1440 section_1">
-                <article id="presentation">
-                    <h1>John Doe - Développeur web et web mobile</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                    <a href="#"class="btn_1">Contactez-moi</a>
-                </article>                
-                <img src="img/moi.png" alt="photo du dev">                
-            </section>
-            <section id="section_2">
-                <h2>Ma formation</h2>
-                <article id="art1">
-                    <img src="img/dev-a-la-carte.png" alt="photo ligne de code">
-                    <div id="bcgO1">
-                        <h3>Formation développement à la cart</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, repellat earum quos facere quibusdam exercitationem illo a eligendi dignissimos dicta quisquam voluptatem sapiente repellendus porro? Exercitationem ut quidem asperiores.</p>
-                        <a href="#"class="btn_2">En savoir plus</a>
-                    </div>
-                </article>
-                <article id="art2">
-                    <div id="bcgO2">
-                        <h3>Formation Développeur Web et Web Mobile</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis, repellat earum quos facere quibusdam exercitationem illo a eligendi dignissimos dicta quisquam voluptatem sapiente repellendus porro? Exercitationem ut quidem asperiores.</p>
-                        <a href="#"class="btn_2">En savoir plus</a>
-                    </div>
-                    <img src="img/dwwm.png" alt="Interface ligne de code">
-                </article>
-            </section>
-            <section id="competence" class="container1440">
-                <h2>Mes compétences</h2>
                 <ul id="comp_list">
                     <li>
                         <label for="toggle_langage">Langages de programmation</label>
-                        <input type="checkbox" id="toggle_langage" aria-expanded="false">
+                        <input type="checkbox" id="toggle_langage">
                         <ul id="sub_langage">
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -77,17 +109,8 @@
                         </ul>
                     </li>
                     <li>
-                        <label for="toggle_conception">Conception web</label>
-                        <input type="checkbox" id="toggle_conception" aria-expanded="false">
-                        <ul id="sub_conception">
-                            <li>Responsive Web Design</li>
-                            <li>Connaissance des principes UX/UI</li>
-                            <li>Adobe XD / Figma / Sketch</li>
-                        </ul>
-                    </li>
-                    <li>
                         <label for="toggle_framework">Frameworks et bibliothèques</label>
-                        <input type="checkbox" id="toggle_framework" aria-expanded="false">
+                        <input type="checkbox" id="toggle_framework">
                         <ul id="sub_framework">
                             <li>Front-end
                                 <ul id="sub_front">
@@ -107,16 +130,8 @@
                         </ul>
                     </li>
                     <li>
-                        <label for="toggle_service">Services Web</label>
-                        <input type="checkbox" id="toggle_service" aria-expanded="false">
-                        <ul id="sub_service">
-                            <li>APIs Rest</li>
-                            <li>GraphQL</li>
-                        </ul>
-                    </li>
-                    <li>
                         <label for="toggle_base">Bases de données</label>
-                        <input type="checkbox" id="toggle_base" aria-expanded="false">
+                        <input type="checkbox" id="toggle_base">
                         <ul id="sub_base">
                             <li>MySQL</li>
                             <li>MongoDB</li>
@@ -124,8 +139,38 @@
                         </ul>
                     </li>
                     <li>
+                        <label for="toggle_outil">Outils de développement</label>
+                        <input type="checkbox" id="toggle_outil">
+                        <ul id="sub_outil">
+                            <li>Git et GitHub</li>
+                            <li>Babel</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul id="comp_list2">
+                    <li>
+                        <label for="toggle_conception">Conception web</label>
+                        <input type="checkbox" id="toggle_conception">
+                        <ul id="sub_conception">
+                            <li>Responsive Web Design</li>
+                            <li>Connaissance des principes UX/UI</li>
+                            <li>Adobe XD / Figma / Sketch</li>
+                        </ul>
+                    </li> 
+                    <li>
+                        <label for="toggle_service">Services Web</label>
+                        <input type="checkbox" id="toggle_service">
+                        <ul id="sub_service">
+                            <li>APIs Rest</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </li>
+                    <li>
                         <label for="toggle_securite">Sécurité</label>
-                        <input type="checkbox" id="toggle_securite" aria-expanded="false">
+                        <input type="checkbox" id="toggle_securite">
                         <ul id="sub_securite">
                             <li>Principes de sécurité web (OWASP)</li>
                             <li>Gestion des sessions et des cookies</li>
@@ -134,17 +179,8 @@
                         </ul>
                     </li>
                     <li>
-                        <label for="toggle_outil">Outils de développement</label>
-                        <input type="checkbox" id="toggle_outil" aria-expanded="false">
-                        <ul id="sub_outil">
-                            <li>Git et Github</li>
-                            <li>Babel</li>
-                            <li>Visual Studio Code</li>
-                        </ul>
-                    </li>
-                    <li>
                         <label for="toggle_autre">Autres compétences</label>
-                        <input type="checkbox" id="toggle_autre" aria-expanded="false">
+                        <input type="checkbox" id="toggle_autre">
                         <ul id="sub_autre">
                             <li>Testing et débogage</li>
                             <li>Performances et optimisations</li>
@@ -155,47 +191,47 @@
                         </ul>
                     </li>
                 </ul>
-            </section>
-            <section id="section_projet" class="container1440">
-                <div>
-                    <h2>Mes projet</h2> 
-                    <a href="#" class="btn_2">Voir tous les projets</a>
-                </div>
-                <div id="flx">
-                    <article>
-                        <a href="#" class="bord">
-                            <img src="img/projet1.PNG" alt="photo projet">
-                            <h3>Home Key - Intégration HTML & CSS</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                        </a>
-                        <div class="sepa">
-                            <a href="#" class="btn_2">Lire la suite</a>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="#" class="bord">
-                            <img src="img/projet2.PNG" alt="photo projet">
-                            <h3>Vividly - Intégration Mobile First</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
-                        </a>
-                        <div class="sepa">
-                            <a href="#" class="btn_2">Lire la suite</a>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="#" class="bord">
-                            <img src="img/projet3.PNG" alt="photo projet">
-                            <h3>Portfolio de Développeur Web</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et? ...</p>
-                        </a>
-                        <div class="sepa">
-                            <a href="#" class="btn_2">Lire la suite</a>
-                        </div>
-                    </article>
-                </div>
-            </section>           
-        </main>
-    </div>
+            </div>
+        </section>
+        <section id="section_projet" class="container1440">
+            <div id="alig">
+                <h2>Mes projets</h2> 
+                <a href="#" class="btn_2">Voir tous les projets</a>
+            </div>
+            <div id="flx">
+                <article>
+                    <a href="#" class="bord">
+                        <img src="img/projet1.PNG" alt="photo projet">
+                        <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                    </a>
+                    <div class="sepa">
+                        <a href="#" class="btn_2">Lire la suite</a>
+                    </div>
+                </article>
+                <article>
+                    <a href="#" class="bord">
+                        <img src="img/projet2.PNG" alt="photo projet">
+                        <h3>Vividly - Intégration Mobile First</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                    </a>
+                    <div class="sepa">
+                        <a href="#" class="btn_2">Lire la suite</a>
+                    </div>
+                </article>
+                <article class="large">
+                    <a href="#" class="bord">
+                        <img src="img/projet3.PNG" alt="photo projet">
+                        <h3>Portfolio de Développeur Web</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur deleniti quidem fugit eveniet perferendis ex assumenda enim totam ullam similique iste, quas reiciendis quae officia soluta dolorum obcaecati et?</p>
+                    </a>
+                    <div class="sepa">
+                        <a href="#" class="btn_2">Lire la suite</a>
+                    </div>
+                </article>
+            </div>
+        </section>           
+    </main>
     <footer class="bcgF">
         <div class="container1440">
             <p>Mon super site web !</p>
